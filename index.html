@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-menu-shadow"></div>
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="nav-menu">
+            <img class="open-menu" src="./images/icon-menu.svg" alt="" />
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img class="close_menu" src="./images/icon-close.svg" alt="" />
+            </li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="cart">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <span></span>
+          </div>
+          <div class="user">
+            <img src="./images/image-avatar.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cart-info">
+          <div class="cart-head">
+            <h3>Cart</h3>
+          </div>
+          <div class="empty-cart">
+            <span>Your cart is empty.</span>
+          </div>
+          <div class="cart-product">
+            <div class="product-cart-info">
+              <img src="/images/image-product-1.jpg" alt="" />
+              <div class="product-text">
+                <p>Autumn Limited Edition...</p>
+                <p class="price_total">$125 x 3 <span>$375.00</span></p>
+              </div>
+            </div>
+
+            <a href="#" class="delete-product"
+              ><img src="./images/icon-delete.svg" alt=""
+            /></a>
+          </div>
+
+          <button class="checkout-btn btn-default">Checkout</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="main-container">
+        <div class="caroussel-images">
+          <img
+            src="./images/image-product-1.jpg"
+            alt=""
+            class="carousel-img active desktop-active"
+          />
+          <img src="./images/image-product-2.jpg" alt="" class="carousel-img" />
+          <img src="./images/image-product-3.jpg" alt="" class="carousel-img" />
+          <img src="./images/image-product-4.jpg" alt="" class="carousel-img" />
+          <div class="control-btns">
+            <div class="right-arrow caroussel-btn">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+            <div class="left-arrow caroussel-btn">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+          </div>
+          <div class="thumbnails">
+            <a href="#" class="active-thumbnail"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+        </div>
+
+        <div class="product-description">
+          <h3>Sneaker Company</h3>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="price-menu">
+            <div class="price" data-link="./images/image-product-1.jpg">
+              <h1>$125.00</h1>
+              <h3>50%</h3>
+            </div>
+            <h3 class="initial-price">$250.00</h3>
+          </div>
+          <div class="quantity-price-wrapper">
+            <div class="quantity">
+              <span class="plus"
+                ><img src="./images/icon-plus.svg" alt=""
+              /></span>
+              <h3 id="quantityValue">0</h3>
+              <span class="minus"
+                ><img src="./images/icon-minus.svg" alt=""
+              /></span>
+            </div>
+
+            <button class="addTo btn-default">
+              <span
+                ><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#ffffff"
+                    fill-rule="nonzero"
+                  /></svg></span
+              >Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="overflow-lightbox">
+      <div class="caroussel-images-lightbox">
+        <div class="img-wrapper-lightbox">
+          <svg
+            class="close-lightbox"
+            width="14"
+            height="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <img
+            src="./images/image-product-1.jpg"
+            alt=""
+            class="lightbox-active lightbox-img"
+          />
+          <img src="./images/image-product-2.jpg" alt="" class="lightbox-img" />
+          <img src="./images/image-product-3.jpg" alt="" class="lightbox-img" />
+          <img src="./images/image-product-4.jpg" alt="" class="lightbox-img" />
+          <div class="lightbox-control-btns">
+            <div class="lightbox-right-arrow">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+            <div class="lightbox-left-arrow">
+              <img src="./images/icon-next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lightbox-thumbnails">
+          <a href="#" class="active-thumbnail">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+ <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/omarhmitoch" target="_blank">Omar</a>.
+ </divs> 
+    <script src="main.js"></script>
+    
+  </body>
+</html>
